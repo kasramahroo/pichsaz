@@ -1,0 +1,27 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block title %}
+  {{product.title}} 
+{% endblock title %}
+{% block meta %}
+  <meta name="description" content="{{product.title}} | فروش {{product.title}} با کیفیت بالا، مطابق استانداردهای DIN و ISO، در گریدهای 8.8، 10.9 و 12.9. ارسال سریع به سراسر ایران همراه با قیمت رقابتی و مشاوره فنی رایگان.">
+  <meta name="keywords" content="پیچ‌ساز, پیچ و مهره ایران, پیچ شش‌گوش, پیچ آلن, مهره واشردار, مهره قفلی, پیچ استیل 304, پیچ استیل 316, پیچ فولادی گرید 8.8, فروشگاه پیچ و مهره تهران, ارسال پیچ و مهره ایران, قیمت پیچ و مهره, فروش اینترنتی پیچ, قطعات اتصال صنعتی ایران">
+{% endblock %}
+<meta name="meta" content="hi">
+{% block content %}
+  <div class="product-container">
+    <div class="product-container-image-container">
+      <img class="product-main-image" src="{{product.image.url}}" alt="product image">
+    </div>
+    <div class="product-container-text-container">
+        
+        <h1>{{product.title}}</h1>
+        <p class="product-details">
+          {{product.description}}
+        </p>
+        
+        <a class="buy-button" href="tel:+{{about_us_itemss.phone_number.first}}">خرید محصول</a>
+    </div>
+  </div>
+{% endblock %}
+    
