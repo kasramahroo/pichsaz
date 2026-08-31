@@ -131,6 +131,11 @@ main {
     height: 200px;
 }
 
+.hero-actions {
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
 .about-item {
     clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
 }
@@ -194,7 +199,7 @@ main {
     width: 5rem;
     height: 5rem;
     object-fit: contain;
-    background: var(--brand);
+    background: var(--white);
     clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 14px, 100% calc(100% - 14px), calc(100% - 14px) 100%, 14px 100%, 0 calc(100% - 14px), 0 14px);
 }
 
@@ -388,6 +393,7 @@ main {
     .hero-section-image {
         height: 48vh;
         min-height: 300px;
+        margin-top: 100px;
     }
 
     .hero-section-logo-container,
@@ -423,6 +429,10 @@ main {
         flex: 1;
         padding: 0.8rem 0.65rem !important;
         text-align: center;
+    }
+
+    .hero-actions-link-wide {
+        flex: 0 0 100%;
     }
 
     .about-section,
