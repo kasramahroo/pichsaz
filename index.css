@@ -343,7 +343,7 @@ main {
 
     .hero-text,
     .hero-actions,
-    .about-section > span {
+    .about-section > .about-column {
         width: 100% !important;
         height: auto !important;
     }
@@ -364,7 +364,7 @@ main {
         padding: 7rem 2rem !important;
     }
 
-    .about-section > span:nth-child(2) > p:first-child {
+    .about-section > .about-content > .section-title {
         font-size: 2.25rem !important;
     }
 
@@ -442,7 +442,7 @@ main {
         padding: 4.5rem 1.5rem !important;
     }
 
-    .about-section > span:first-child {
+    .about-section > .about-column:first-child {
         gap: 1rem !important;
     }
 
@@ -454,10 +454,7 @@ main {
         font-size: 3.5rem !important;
     }
 
-    .about-section > span:nth-child(2) > p:first-child,
-    .products-section > p,
-    .partners-section > p,
-    .contact-section > p {
+    .section-title {
         font-size: 1.8rem !important;
     }
 
@@ -472,7 +469,7 @@ main {
         padding: 1.5rem !important;
     }
 
-    .product > p:first-child {
+    .product > .product-title {
         font-size: 1.5rem !important;
     }
 

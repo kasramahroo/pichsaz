@@ -78,8 +78,8 @@ if (window.gsap && !window.matchMedia("(prefers-reduced-motion: reduce)").matche
         };
 
         addScrollAnimation(".about-section", ".about-section .about-item", { y: 48, stagger: 0.12 });
-        addScrollAnimation(".about-section", ".about-section > span:nth-child(2) > *", { y: 28 });
-        addScrollAnimation(".products-section", ".products-section > p", { y: 42 });
+        addScrollAnimation(".about-section", ".about-section > .about-content > *", { y: 28 });
+        addScrollAnimation(".products-section", ".products-section > .section-title", { y: 42 });
         gsap.utils.toArray(".products-section .product").forEach((product) => {
             gsap.from(product, {
                 autoAlpha: 0,
@@ -93,7 +93,7 @@ if (window.gsap && !window.matchMedia("(prefers-reduced-motion: reduce)").matche
                 },
             });
         });
-        addScrollAnimation(".partners-section", ".partners-section > p", { y: 28 });
+        addScrollAnimation(".partners-section", ".partners-section > .section-title", { y: 28 });
         gsap.timeline({
             scrollTrigger: {
                 trigger: ".partners-section",
@@ -116,7 +116,7 @@ if (window.gsap && !window.matchMedia("(prefers-reduced-motion: reduce)").matche
                 stagger: 0.08,
                 ease: "power2.out",
             });
-        addScrollAnimation(".contact-section", ".contact-section > p, .contact-section .social-link", { y: 35, stagger: 0.12 });
+        addScrollAnimation(".contact-section", ".contact-section > .section-title, .contact-section .social-link", { y: 35, stagger: 0.12 });
         addScrollAnimation(".footer", ".footer-intro, .footer-links, .footer-contact, .footer-form", { y: 30, stagger: 0.12 });
     }
 }

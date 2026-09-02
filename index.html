@@ -3,24 +3,67 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="خرید پیچ و مهره صنعتی و ساختمانی از پیچ‌ساز؛ تأمین بیش از ۴۰۰۰ محصول شامل پیچ، مهره، واشر، استادبولت، انکربولت و اتصالات سفارشی با ارسال سریع." />
+        <meta
+            name="keywords"
+            content="پیچ‌ساز, پیچساز, خرید پیچ و مهره, خرید پیچ, محصولات پیچ‌ساز, محصولات پیچساز, پیچ صنعتی, مهره صنعتی, واشر, استادبولت, انکربولت" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="theme-color" content="#b32025" />
+        <meta property="og:locale" content="fa_IR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="پیچ‌ساز" />
+        <meta property="og:title" content="خرید پیچ و مهره و اتصالات صنعتی | پیچ‌ساز" />
+        <meta
+            property="og:description"
+            content="تأمین‌کننده انواع پیچ، مهره، واشر و اتصالات صنعتی و ساختمانی با تنوع بالا، ساخت سفارشی و ارسال سریع." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="خرید پیچ و مهره و اتصالات صنعتی | پیچ‌ساز" />
+        <meta
+            name="twitter:description"
+            content="تأمین‌کننده انواع پیچ، مهره، واشر و اتصالات صنعتی و ساختمانی با تنوع بالا، ساخت سفارشی و ارسال سریع." />
+        <link rel="preload" as="image" href="./images/hero.jpg" fetchpriority="high" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
         <script src="./index.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="./images/logo_pichsaz.png" />
         <link rel="stylesheet" href="./index.css" />
-        <title>پیچ‌ساز</title>
+        <title>خرید پیچ و مهره و اتصالات صنعتی | پیچ‌ساز</title>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Store",
+                "name": "پیچ‌ساز",
+                "alternateName": ["پیچساز", "Pichsaz"],
+                "description": "تأمین‌کننده انواع پیچ، مهره و اتصالات صنعتی و ساختمانی، محصولات سفارشی و اتصالات مهاری.",
+                "telephone": "+989123439773",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "میدان قزوین، خیابان قزوین، پاساژ فرجی",
+                    "addressLocality": "تهران",
+                    "addressCountry": "IR"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "ایران"
+                },
+                "sameAs": ["https://www.instagram.com/pichsaz.co", "https://ble.ir/kasramahroo"]
+            }
+        </script>
     </head>
     <body>
         <div class="wrapper">
             <nav class="navbar px-12 flex items-center gap-12">
-                <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
+                <button class="menu-toggle" type="button" aria-label="باز کردن منوی اصلی" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <!-- Icon from Boxicons by Boxicons - https://github.com/box-icons/boxicons-core/blob/main/LICENSE -->
                         <path fill="currentColor" d="M4 11h16v2H4zm0-5h16v2H4zm0 10h16v2H4z" />
                     </svg>
                 </button>
-                <a href="" class="navbar-image-container">
-                    <img src="./images/logo_pichsaz.png" alt="پیچ‌ساز" />
+                <a href="./" class="navbar-image-container" aria-label="صفحه اصلی پیچ‌ساز">
+                    <img src="./images/logo_pichsaz.png" alt="لوگوی پیچ‌ساز" width="2588" height="2534" />
                 </a>
                 <div class="navbar-link-conatiner flex gap-4">
                     <a href="#products" class="px-4 py-1 text-black/90 font-normal">محصولات</a>
@@ -32,7 +75,7 @@
             <aside class="mobile-menu" id="mobile-menu" aria-label="منوی اصلی" aria-hidden="true" inert>
                 <div class="mobile-menu-header flex items-center justify-between">
                     <span class="text-lg font-bold text-white/70">منو</span>
-                    <button class="mobile-menu-close text-white cursor-pointer" type="button" data-menu-close>
+                    <button class="mobile-menu-close text-white cursor-pointer" type="button" aria-label="بستن منوی اصلی" data-menu-close>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                             <!-- Icon from Carbon by IBM - undefined -->
                             <path
@@ -49,28 +92,24 @@
             </aside>
             <main class="w-full flex flex-col items-center">
                 <section class="hero-section flex flex-col w-full min-h-[100vh]">
-                    <div class="hero-section-image">
-                        <!-- <div class="hero-section-logo-container">
-                            <img src="./images/logo_pichsaz.png" />
-                        </div> -->
-                    </div>
+                    <div class="hero-section-image" role="img" aria-label="مجموعه‌ای از انواع پیچ‌های صنعتی و ساختمانی"></div>
                     <div class="hero-section-text h-[40vh] bg-white w-full flex">
-                        <span class="hero-text w-1/2 flex flex-col items-start justify-between h-[100%] gap-4 py-12 px-12">
+                        <div class="hero-text w-1/2 flex flex-col items-start justify-between h-[100%] gap-4 py-12 px-12">
                             <h1 class="text-black font-bold text-8xl">پیچ‌ساز</h1>
                             <p class="text-black/50 font-medium text-xl">
                                 پیچ‌ساز، تامین‌کننده‌ای مطمئن برای انواع پیچ و مهره‌های صنعتی و ساختمانی، با تنوع بی‌نظیر محصولات و تضمین کیفیت، آماده است تا
                                 نیازهای شما را با ارسال سریع و خدمات حرفه‌ای برآورده کند.
                             </p>
-                        </span>
-                        <span class="hero-actions w-1/2 flex items-end justify-end h-[100%] gap-4 pb-12 px-12">
+                        </div>
+                        <div class="hero-actions w-1/2 flex items-end justify-end h-[100%] gap-4 pb-12 px-12">
                             <a href="https://wa.me/989123439773" class="hero-actions-link px-12 py-2 bg-black text-white">واتساپ</a>
                             <a href="https://ble.ir/kasramahroo" class="hero-actions-link px-12 py-2 bg-black text-white">پیام رسان بله</a>
                             <a href="tel:09123439773" class="hero-actions-link hero-actions-link-wide px-12 py-2 bg-brand text-white">تماس بگیرید</a>
-                        </span>
+                        </div>
                     </div>
                 </section>
                 <section class="about-section flex flex gap-12 w-full items-stretch bg-black py-48 px-12" id="about">
-                    <span class="w-[50%] flex flex-col gap-8">
+                    <div class="about-column w-[50%] flex flex-col gap-8">
                         <div class="about-item w-full bg-brand px-8 py-4 flex flex-col gap-0 grow-1">
                             <p class="text-black/100 font-bold text-7xl">4000+</p>
                             <p class="text-black/90 font-medium text-md">محصول</p>
@@ -83,9 +122,9 @@
                             <p class="text-black/100 font-bold text-7xl">1000+</p>
                             <p class="text-black/90 font-medium text-md">مشتری</p>
                         </div>
-                    </span>
-                    <span class="w-[50%] flex flex-col gap-8">
-                        <p class="text-white/90 px-4 py-4 font-bold text-4xl text-justify">درباره پیچ‌ساز</p>
+                    </div>
+                    <div class="about-column about-content w-[50%] flex flex-col gap-8">
+                        <h2 class="section-title text-white/90 px-4 py-4 font-bold text-4xl text-justify">درباره پیچ‌ساز</h2>
                         <p class="text-black/70 bg-white px-6 py-8 font-medium text-xl text-justify about-long-text">
                             در پیچ‌ساز، با بیش از 30 سال تجربه و حضور فعال در بازار پیچ و مهره، به عنوان یکی از پیشگامان این صنعت، همواره به دنبال ارتقاء کیفیت
                             و رضایت مشتریان خود بوده‌ایم. در این سال‌ها، با تکیه بر دانش فنی روز و استفاده از بهترین مواد اولیه، توانسته‌ایم طیف گسترده‌ای از
@@ -95,70 +134,70 @@
                             خدمات عالی و پشتیبانی مستمر، بخش مهمی از موفقیت ماست. به همین دلیل، همواره در تلاش هستیم تا تجربه خریدی آسان، سریع و بدون دغدغه را
                             برای شما فراهم آوریم.
                         </p>
-                    </span>
+                    </div>
                 </section>
                 <section class="products-section flex flex-col w-full min-h-[100vh] bg-white px-12 py-36" id="products">
-                    <p class="text-black/90 font-bold text-4xl border-right-brand px-2">محصولات پیچ‌ساز</p>
+                    <h2 class="section-title text-black/90 font-bold text-4xl border-right-brand px-2">محصولات پیچ‌ساز</h2>
                     <div class="product-container flex flex-wrap justify-evenly gap-8 mt-12">
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">پیچ‌ها</p>
-                            <img class="w-[50%]" src="./images/product1.png" alt="پیچ‌ها" />
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">پیچ‌ها</h3>
+                            <img class="w-[50%]" src="./images/product1.png" alt="انواع پیچ صنعتی عرضه‌شده توسط پیچ‌ساز" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">
                                 انواع پیچ‌های صنعتی در سایز، گرید و متریال‌های مختلف، مناسب برای کاربردهای متنوع صنعتی و پروژه‌ای.
                             </p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">مهره‌ها</p>
-                            <img class="w-[50%]" src="./images/product2.png" alt="مهره‌ها" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">مهره‌ها</h3>
+                            <img class="w-[50%]" src="./images/product2.png" alt="انواع مهره صنعتی در مدل‌ها و سایزهای مختلف" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">
                                 تأمین انواع مهره‌های صنعتی در مدل‌ها و مشخصات مختلف، متناسب با انواع پیچ و نیاز پروژه.
                             </p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">واشرها</p>
-                            <img class="w-[50%]" src="./images/product3.png" alt="واشرها" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">واشرها</h3>
+                            <img class="w-[50%]" src="./images/product3.png" alt="انواع واشر صنعتی برای اتصالات پیچ و مهره" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">انواع واشرهای صنعتی برای ایجاد اتصال مطمئن، توزیع فشار و افزایش پایداری اتصالات.</p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">استادبولت</p>
-                            <img class="w-[50%]" src="./images/product4.png" alt="استادبولت" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">استادبولت</h3>
+                            <img class="w-[50%]" src="./images/product4.png" alt="استادبولت صنعتی در سایز و گریدهای مختلف" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">
                                 تأمین انواع استادبولت و متعلقات آن در سایز و گریدهای مختلف، مناسب برای اتصالات صنعتی و پروژه‌های تخصصی.
                             </p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">انکربولت</p>
-                            <img class="w-[50%]" src="./images/product5.png" alt="انکربولت" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">انکربولت</h3>
+                            <img class="w-[50%]" src="./images/product5.png" alt="انکربولت صنعتی برای مهار سازه و تجهیزات" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">
                                 انواع انکربولت برای مهار و اتصال سازه‌ها و تجهیزات، مناسب برای کاربردهای عمرانی و صنعتی.
                             </p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">رول‌بولت و اتصالات مهاری</p>
-                            <img class="w-[50%]" src="./images/product6.png" alt="رول‌بولت و اتصالات مهاری" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">رول‌بولت و اتصالات مهاری</h3>
+                            <img class="w-[50%]" src="./images/product6.png" alt="رول‌بولت، یوبولت و اتصالات مهاری صنعتی" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">
                                 انواع رول‌بولت، یوبولت و سایر اتصالات مهاری برای نصب و اتصال مطمئن تجهیزات و سازه‌ها.
                             </p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">اتصالات خاص</p>
-                            <img class="w-[50%]" src="./images/product7.png" alt="اتصالات خاص" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">اتصالات خاص</h3>
+                            <img class="w-[50%]" src="./images/product7.png" alt="قطعات و اتصالات خاص مطابق مشخصات فنی پروژه" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">تأمین و ساخت انواع قطعات و اتصالات خاص متناسب با نیاز پروژه و مشخصات فنی مشتری.</p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">ساخت سفارشی</p>
-                            <img class="w-[50%]" src="./images/product8.png" alt="ساخت سفارشی" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">ساخت سفارشی</h3>
+                            <img class="w-[50%]" src="./images/product8.png" alt="ساخت سفارشی پیچ، مهره و قطعات خاص" width="1254" height="1254" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">ساخت انواع پیچ، مهره و قطعات خاص مطابق نقشه، نمونه و مشخصات فنی موردنظر مشتری.</p>
-                        </span>
-                        <span class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
-                            <p class="text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">متریال و پوشش‌ها</p>
-                            <img class="w-[50%]" src="./images/1bg.png" alt="متریال و پوشش‌ها" />
+                        </article>
+                        <article class="product flex flex-col items-center gap-4 bg-surface px-12 py-8">
+                            <h3 class="product-title text-black/90 font-bold text-3xl border-bottom-brand pb-4 text-center">متریال و پوشش‌ها</h3>
+                            <img class="w-[50%]" src="./images/1bg.png" alt="نمونه متریال، گرید و پوشش اتصالات صنعتی" width="500" height="500" loading="lazy" decoding="async" />
                             <p class="text-black/50 font-medium text-lg">ارائه محصولات با متریال، گرید و پوشش‌های متنوع متناسب با شرایط و الزامات هر پروژه.</p>
-                        </span>
+                        </article>
                     </div>
                 </section>
                 <section class="partners-section flex flex-col w-full bg-white px-12 py-36">
-                    <p class="text-black/90 font-bold text-4xl border-right-brand px-2">سابقه همکاری با</p>
+                    <h2 class="section-title text-black/90 font-bold text-4xl border-right-brand px-2">سابقه همکاری با</h2>
                     <div class="w-full flex flex-col gap-4 mt-12">
                         <p class="cooperator text-white/100 font-medium text-lg px-8 py-2 bg-brand w-fit">
                             <span class="cooperator-text"
@@ -183,7 +222,7 @@
                     </div>
                 </section>
                 <section class="contact-section flex flex-col w-full bg-white px-12 pt-36 pb-64" id="contact">
-                    <p class="text-black/90 font-bold text-4xl border-right-brand px-2">راه های ارتباط با پیچ‌ساز</p>
+                    <h2 class="section-title text-black/90 font-bold text-4xl border-right-brand px-2">راه‌های ارتباط با پیچ‌ساز</h2>
                     <div class="w-full flex flex-wrap justify-center gap-4 mt-12">
                         <a
                             href="tel:09123439773"
@@ -214,7 +253,7 @@
                 <footer class="footer w-full" id="footer">
                     <section class="footer-box">
                         <div class="footer-intro">
-                            <img class="footer-logo" src="./images/logo_pichsaz.png" alt="لوگوی پیچ‌ساز" />
+                            <img class="footer-logo" src="./images/logo_pichsaz.png" alt="لوگوی پیچ‌ساز" width="2588" height="2534" loading="lazy" decoding="async" />
                             <h2>پیچ‌ساز</h2>
                             <p>تامین‌کننده انواع پیچ، مهره و اتصالات صنعتی و ساختمانی؛ همراه شما از انتخاب محصول تا تحویل سریع و مطمئن.</p>
                         </div>
